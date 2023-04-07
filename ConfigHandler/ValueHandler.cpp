@@ -120,7 +120,7 @@ QVariant KeySequence::Process(const QVariant &val)
         return QKeySequence(Qt::Key_Return).toString();
     }
     if (str.length() > 0) {
-        const QCharRef& lastChar = str[str.length() - 1];
+        const QCharRef &lastChar = str[str.length() - 1];
         str.replace(str.length() - 1, 1, lastChar.toLower());
     }
     return str;

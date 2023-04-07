@@ -18,7 +18,9 @@
     }
 
 static QMap<QString, QSharedPointer<ValueHandler>> recognizedGeneralOptions = {
-    OPTION("name", String("Flame Rampage"))
+    OPTION("name", String("Config Handler")),
+    OPTION("path", ExistingDir()),
+    SHORTCUT("shortCut", "Ctrl+S")
 };
 
 bool ConfigHandler::m_hasErr{false};

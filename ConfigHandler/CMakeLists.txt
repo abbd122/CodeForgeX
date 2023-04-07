@@ -41,4 +41,5 @@ target_sources(
   ConfigHandler.cpp
   ValueHandler.h
   ValueHandler.cpp
+  Test.hpp
 )

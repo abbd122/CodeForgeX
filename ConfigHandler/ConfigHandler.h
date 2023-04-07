@@ -38,6 +38,12 @@ public:
 
     static ConfigHandler* GetInstance();
 
+    CONFIG_GETTER_SETTER(name, SetName, QString)
+
+    CONFIG_GETTER_SETTER(path, SetPath, QString)
+
+    CONFIG_GETTER_SETTER(shortCut, SetShortCut, QString)
+
     void SetValue(const QString &key, const QVariant &value);
 
     QVariant Value(const QString &key) const;
